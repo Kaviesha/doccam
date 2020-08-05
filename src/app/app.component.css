@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    background-color: rgb(8, 80, 80);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box{
+    width: 300px;
+    padding: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgb(20, 31, 31);
+    text-align: center;
+    
+    border-radius: 24px;
+}
+
+.logo{
+    width: 130px;
+    height: 130px;
+}
+
+.inputs{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid springgreen;
+    border-radius: 24px;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: aliceblue;
+    transition: 0;
+
+}
+.inputs:focus{
+  border: 2px solid rgb(83, 88, 4);
+}
+
+.login{
+    border: 0;
+    background: rgb(38, 63, 63);
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px ;
+    border-radius: 24px;
+    width: 150px;
+    padding: 14px 10px;
+    outline: none;
+    color: tan;
+    transition: 0;
+    font-size: 14px;
+    
+}
+
+.login:hover{
+  border: 0;
+    background: rgb(32, 38, 71);
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px;
+    border-radius: 24px;
+    width: 150px;
+    padding: 14px 10px;
+    outline: none;
+    color: tan;
+    transition: 0;
+    font-size: 14px;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: rgb(85, 74, 104);
+  }
+  
+  /* Navbar links */
+  #navbar button {
+    float: right;
+    color: blanchedalmond;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+#navbar h2{
+  float: left;
+  margin-left: 20px;
+  color: rgb(142, 224, 231);
+}
+  
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }

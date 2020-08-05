@@ -1,0 +1,22 @@
+<div *ngIf="auth.user | async as user; else showLogin">
+  
+  <div id="navbar">
+    <h2>Patient Monitor</h2>
+    <button (click)="logout()" class="login">Logout</button>
+  </div> 
+  <app-dashb></app-dashb>
+</div>
+
+
+
+<ng-template #showLogin>
+  <body background="assets/img/doc4.jpg">
+    <form action="" class="box">
+        <h1><img src="assets/img/logo.png" alt="logo" class="logo"></h1>
+        <input [(ngModel)] = "email" type="text" name="email" placeholder="User" class="inputs">
+        <input [(ngModel)] = "password" type="password" name="password" placeholder="Password" class="inputs">
+        
+        <input type="button" value="Login" class="login" (click)="logIn()">
+    </form>
+</body>
+</ng-template>

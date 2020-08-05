@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "rpidoc-f82d7": {
+      "hosting": {
+        "doccam": [
+          "rpidoc-f82d7"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<div id="dashBody">
+    <div id="videoDiv">
+        <div>
+            <!-- [src] = "myStream" --> 
+            <video #myvideo [src]="rStream"  autoplay style="max-height: 90vh; margin-top: 5px;"></video>
+ 
+        </div>
+        <div *ngIf="!readyStat" class="buttonBar">
+            <button  class="vidControll" (click)="ready(myvideo)">Ready</button>
+        </div>
+        <div *ngIf="readyStat" class="buttonBar">
+            
+            <button  class="vidControll" (click)="disconnect()">Stop sharing</button>
+            <h2 style="color: aqua;">You are logged in as a {{user}}</h2>
+            <button  class="vidControll" (click)="callActive(myvideo)">Share My Feed</button>
+            
+        </div>
+    </div>
+    <div id="stat" style="background-color: rgb(13, 13, 14);">
+        <div id="hbMonitor"> <app-temp></app-temp></div>
+        <div id="temp"><app-heartbeat></app-heartbeat></div>
+        <input hidden type="text" [(ngModel)]="rPeerId" >
+    </div>
+</div>
